@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Finanzas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>💰 Mi Control Financiero</h1>
+
+<h2>Ingresos</h2>
+<input id="ingresoNombre" placeholder="Nombre">
+<input id="ingresoMonto" type="number" placeholder="Monto">
+<button onclick="agregarIngreso()">Agregar</button>
+<ul id="listaIngresos"></ul>
+
+<h2>Gastos</h2>
+<input id="gastoNombre" placeholder="Nombre">
+<input id="gastoMonto" type="number" placeholder="Monto">
+<button onclick="agregarGasto()">Agregar</button>
+<ul id="listaGastos"></ul>
+
+<h2>Deudas</h2>
+<input id="deudaNombre" placeholder="Nombre">
+<input id="deudaMonto" type="number" placeholder="Monto">
+<input id="deudaInteres" type="number" placeholder="Interés">
+<button onclick="agregarDeuda()">Agregar</button>
+<ul id="listaDeudas"></ul>
+
+<h2>Resumen</h2>
+<p id="totalIngresos"></p>
+<p id="totalGastos"></p>
+<p id="disponible"></p>
+
+<h2>Prioridad de Deudas</h2>
+<button onclick="ordenarDeudas()">Calcular</button>
+<ul id="prioridadDeudas"></ul>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
